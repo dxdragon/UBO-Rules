@@ -1,14 +1,8 @@
 ! 临时
 ||meituan.net/csc/
 ||nunu90.cc/js/alll.js
-||rsc.cdn77.org/*.mp4
 ||kakaocdn.net/thumb/P*/?fname=
 ||52ybcj.com/wp-content/uploads/*/HK-PC.
-!! 肉视频
-||rou.video/js/ga.js
-||rou.video/js/yd.js
-||rou.video/js/exo.js
-rou.video##div[class^="col-span-2"]
 ! 通用
 /gg_
 /ads_
