@@ -1,17 +1,23 @@
 ! 临时
 ||meituan.net/csc/
+||meituan.net/video/
 ||nunu90.cc/js/alll.js
+||rsc.cdn77.org/*.mp4
 ||kakaocdn.net/thumb/P*/?fname=
 ||52ybcj.com/wp-content/uploads/*/HK-PC.
+dmmiku.*##+js(acs, navigator.platform)
 ! 通用
 /gg_
 /ads_
 /ads/*
 /js/ad_
+*/ad.js
+*/ads.js
 .com/ad/
 /adpic/*
 /ad-img/*
 /pagead/*
+/adsense/*
 /js/ads.js
 /ad-right/*
 /js/acmsd/*
@@ -19,13 +25,13 @@
 /adsbygoogle.js
 /templates/defboot/js/*
 /data/attachment/common/cf/*
-##ins.adsbygoogle
+##ins.adsbygoogle,#sitefocus
 ! 广告联盟
 !! Google
 ||google.com/log?
 google.com##[data-text-ad]
 !! Bing
-bing.com###bnp_container,#b_alsotry
+bing.com###bnp_container,#b_alsotry,.ins_exp.tds
 !! MSN
 ||msn.cn/*/libs_ad-service_
 msn.cn##[id^="mrr-topad-id-"],display-ads,[data-ad-index],above-river-block
@@ -48,6 +54,7 @@ tieba.baidu.com##div.p_postlist>:not([data-pid])
 ||bdstatic.com/r/www/cache/biz/ecom/common/api/v-nstip/
 ||bdimg.com/static/common-new/widget/task/img/earn-points-exchange-gifts-bubble.
 baidu.com##.wgt-ads,.wgt-bottom-union,[id^="wgt-ad-"]
+zhidao.baidu.com##div#knowledge-answer:has-text(广告)
 !! 百度百科
 ||baidu.com^*/wikiad/
 ||baidu.com^*/directad?
@@ -64,6 +71,7 @@ baike.baidu.com##div#J-union-wrapper
 ||bdstatic.com/tb/cms/PC*0x
 ||bdstatic.com^*/tam-ogel/
 ||bcebos.com/passApi/js/login
+||tieba-ares.cdn.bcebos.com/mis/
 tieba.baidu.com##.l_banner
 !! 百度网盘
 ||bcebos.com/union/
@@ -292,7 +300,7 @@ book118.com##div.webpreview-recommend
 ||eastmoney.com/web/prd/jump_tracker.js
 ||dftzj.com/pr*/prod/personalrecommend
 ||eastmoney.com/newstatic/images/chartgg.
-eastmoney.com##.adBigBanner,.advert
+eastmoney.com##.adBigBanner,.advert,.news_ad_link
 !! 中金在线
 ||cnfol.com/tui/gainTheAd.js
 ||cnfol.com/f=ua/js/AdSystem/
@@ -307,6 +315,9 @@ cnfol.com##.rightAd
 ||xueqiu.com/account/bind/show.json?
 ||xueqiu.com/analysis/private_sphere/show.json?
 xueqiu.com##.private__domain__association__ad
+!! 理想论坛
+||55188.com/data/attachment/portal/
+55188.com##.couplet,#adlist
 ! 论坛社区
 !! 远景论坛
 ||pcbeta.com/data/attachment/forum/
@@ -335,6 +346,7 @@ movie.douban.com##+js(m3u-prune, /^\/video\/adjump/, /^https:\/\/s\d*\.bfengbf\.
 ! 游戏
 !! 3DM
 ||3dmgame.com/tools/gamead?
+||3dmgame.com/uploads/images/thumbnews/
 !! 游民星空
 ||gamersky.com/common/tg/
 ! 影视
@@ -375,6 +387,8 @@ xyhdm.cc###ad_close
 ||netfly.fun/static/js/tttt.js?
 netfly.fun##.tips-box
 netfly.fun##+js(set-cookie, showBtn, true)
+!! 美剧天堂
+||meijutt.net/js/pcjs/all
 !! 去LZ.YZ视频广告
 ##+js(m3u-prune, /.{35}$/, /^https:\/\/(v\.cdnlz\d*|svip\.high\d*-playback|v3\.yzzy\d*-play\.com)/)
 ! 下载
@@ -407,7 +421,7 @@ xitongzhijia.net##[class^="AD_"],.m-soft-recom
 ||lovestu.com^*banner202
 ghxi.com##div.entry-content>div[style],li.item-sticky
 !! APKMirror
-apkmirror.com##.ezo_ad
+apkmirror.com##.ezo_ad,#bottom-slider
 ! 网盘
 !! 蓝奏云
 /img/hm.js
@@ -428,10 +442,6 @@ uploadrar.com,rahim-soft.com##a.btn-lg
 ||assets-7pb.pages.dev/images/dgpromo.
 !! Rapidgator
 ||rapidgator.net/images/pics/*_782x90_
-! 其他
-||phncdn.com/www-static/js/htmlPauseRoll/
-||phncdn.com/www-static/js/promo-banner.js?
-pornhub.com##ins.adsbytrafficjunky,.adLinks,li.relatedTjIntVideoPcSt,div.video-wrapper>div.hd.clear.original
 ! 骚扰
 ! Cookie提示
 uploadrar.com,up-4ever.net##div#gdpr-cookie-notice

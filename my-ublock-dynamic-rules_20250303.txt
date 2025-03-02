@@ -10,6 +10,7 @@ no-large-media: behind-the-scene false
 * nex.163.com * block
 * eclick.360doc.com * block
 * recommend.360doc.com * block
+* fc.3dmgame.com * block
 * 51.la * block
 * fans.91selfie.com * block
 * apilog-web.acfun.cn * block
@@ -127,7 +128,6 @@ no-large-media: behind-the-scene false
 * l.qq.com * block
 * trace.qq.com * block
 * msg.qy.net * block
-* ra7.xyz * block
 * reachmax.cn * block
 * recaptcha.net * noop
 * rtbasia.com * block
@@ -182,6 +182,7 @@ no-large-media: behind-the-scene false
 10jqka.com.cn thsi.cn * noop
 123pan.com * 3p-frame noop
 123pan.com * 3p-script noop
+123pan.com alicdn.com * noop
 163.com 126.net * noop
 163.com 127.net * noop
 36kr.com 36krcdn.com * noop
@@ -220,21 +221,24 @@ liepin.com lietou-static.com * noop
 liepin.com captcha.qcloud.com * noop
 live.com * 3p-frame noop
 live.com * 3p-script noop
-lzizy9.com * 3p-frame noop
-lzizy9.com * 3p-script noop
 mgtv.com hitv.com * noop
 mi.com xiaomi.com * noop
 muchong.com xmcimg.com * noop
 netfly.fun bytedance.com * noop
 netfly.fun onlymu.sbs * noop
+news.cn xinhuanet.com * noop
 openai.com * 3p-frame noop
 openai.com * 3p-script noop
 qq.com gtimg.cn * noop
 qq.com gtimg.com * noop
+right.com.cn bytegoofy.com * noop
+right.com.cn dingxiang-inc.com * noop
 sina.com.cn sina.cn * noop
 sina.com.cn sinaimg.cn * noop
 sina.com.cn sinajs.cn * noop
 sina.com.cn weibo.com * noop
+smartfeecalculator.com devfiles.pages.dev * noop
+smartfeecalculator.com devuploads.com * noop
 sogou.com sogoucdn.com * noop
 sohu.com 56.com * noop
 sohu.com itc.cn * noop
@@ -248,6 +252,7 @@ weibo.com sinajs.cn * noop
 xiaomi.cn mi-img.com * noop
 xiaomi.cn miui.com * noop
 xiaomi.com mi-img.com * noop
+xinhuanet.com news.cn * noop
 xueqiu.com imedao.com * noop
 yjys05.com pddpic.com * noop
 youku.com alicdn.com * noop
@@ -258,5 +263,6 @@ zhipin.com 126.net * noop
 zhipin.com 163.com * noop
 zhipin.com 163yun.com * noop
 znds.com dangbei.net * noop
+* https://jiexi. * noop
 * https://jx. * noop
 * https://player. * noop
