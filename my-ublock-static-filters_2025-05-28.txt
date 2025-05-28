@@ -1,10 +1,12 @@
 ! 临时
+||gdtv.cn/api/innerAd/
 ||meituan.net/csc/
 ||meituan.net/video/
 ||nunu90.cc/js/alll.js
 ||rsc.cdn77.org/*.mp4
 ||kakaocdn.net/thumb/P*/?fname=
 ||52ybcj.com/wp-content/uploads/*/HK-PC.
+||51cto.com/blog/activity/bride/DetailsBride.
 dmmiku.*##+js(acs, navigator.platform)
 ! 通用
 /gg_
@@ -21,17 +23,20 @@ dmmiku.*##+js(acs, navigator.platform)
 /js/ads.js
 /ad-right/*
 /js/acmsd/*
+||com/banner/
 /advertisement/*
 /adsbygoogle.js
 /templates/defboot/js/*
 /data/attachment/common/cf/*
 ##ins.adsbygoogle,#sitefocus
+##+js(nowebrtc)
 ! 广告联盟
 !! Google
 ||google.com/log?
 google.com##[data-text-ad]
 !! Bing
 bing.com###bnp_container,#b_alsotry,.ins_exp.tds
+bing.com##li.b_algo:has(.sb_adTA_title_link_cn)
 !! MSN
 ||msn.cn/*/libs_ad-service_
 msn.cn##[id^="mrr-topad-id-"],display-ads,[data-ad-index],above-river-block
@@ -44,17 +49,23 @@ baidu.com##ul.imglist>:not(li.imgitem)
 tieba.baidu.com##div.p_postlist>:not([data-pid])
 !! 百度知道
 ||baidu.com/api/qbpv?
+||bdimg.com/*/widget/ad-sou/
+||bdimg.com/*/widget/js/qbthumb/
+||bdimg.com/*/widget/js/yike-card/
 ||baidu.com/question/api/getpraise
 ||baidu.com/question/api/recommend?
 ||baidu.com/task/api/getmytasklist?
 ||baidu.com/business/submit/dailystatistics?
-||bdimg.com/static/question-new/widget/ad-sou/
-||bdimg.com/static/question-new/widget/js/yike-card/
-||bdimg.com/static/question-new/widget/business-vip/
 ||bdstatic.com/r/www/cache/biz/ecom/common/api/v-nstip/
-||bdimg.com/static/common-new/widget/task/img/earn-points-exchange-gifts-bubble.
+||bdimg.com/*/widget/task/img/earn-points-exchange-gifts-bubble.
 baidu.com##.wgt-ads,.wgt-bottom-union,[id^="wgt-ad-"]
-zhidao.baidu.com##div#knowledge-answer:has-text(广告)
+wen.baidu.com,zhidao.baidu.com##div#knowledge-answer:has-text(广告)
+zhidao.baidu.com##button.task-list-button,.aria-div,.jump-top-box,.businessvip-wrapper,.question-number-text-chain,aside#qb-side
+!! 百度经验
+||bdstatic.com/*/widget/ad/
+||bdstatic.com/*/widget/baidu-tongji/
+||bdstatic.com/*/widget/task-panel/img/
+jingyan.baidu.com##.bottom-ads-container,.right-fixed-related-wrap,.wgt-cms-banner,a.fresh-share-exp-e,#task-panel-wrap,.wgt-income-money,a.wgt-barrier-free
 !! 百度百科
 ||baidu.com^*/wikiad/
 ||baidu.com^*/directad?
@@ -86,13 +97,15 @@ baidu.com##.bd-aside-ad
 ||baidu.com/goods/interface/getgoodsinfo?
 ||baidu.com/gdoc/activity/getschoolbanner
 !!百度好看
+||mpics.bdstatic.com/qm/
 ||baidu.com/videoui/api/hotwords?
 ||baidu.com/videoui/api/videopcads?
 ||baidu.com/haokan/ui-web/op/banner?
 ||bcebos.com/nv*/static/ecom/js/als/
-||hk.bdstatic.com/static/wza/v*/_aria.js?
 ||baidu.com/haokan/ui-web/search/hotwords?
-haokan.baidu.com##ul[class]>:not(li[vid]),div.lianmeng-pause,div#passport-login-pop,div.pop-mask
+||passport.baidu.com/passApi/js/uni_wrapper.js?
+||bdstatic.com/_next/static/media/close-game-icon.
+haokan.baidu.com##ul[class]>:not(li[vid]),div.lianmeng-pause,div#passport-login-pop,div.pop-mask,div[class^="pageBase_h5-game-float"],a.suitableaging,[class^="invoke-app-"],.page-bottom-hotsearch
 haokan.baidu.com##div[class^="videoList_videolist-item"]:has(div[class*="-aditem"])
 !! 新浪
 ||sinaimg.cn/unipro/
@@ -127,6 +140,8 @@ sohu.com##div#allseeList>div[id],div.news-wrapper>div[id],div.text-ad-container
 !! 腾讯网
 ||ssp.qq.com/ad|
 ||mp.weixin.qq.com/mp/*report?
+||mp.weixin.qq.com/mp/jsmonitor
+||mp.weixin.qq.com/mp/getappmsgad?
 ||qq.com/gw/pc_search/hotWord
 qq.com##.ad-item,.normal_ad-item,#topAd,#bottomAd,.comment_ad-item
 ! 在线视频
@@ -135,9 +150,9 @@ qq.com##.ad-item,.normal_ad-item,#topAd,#bottomAd,.comment_ad-item
 ||youtube.com/api/stats/
 ||youtube.com/ptracking?
 ||youtube.com^*/log_event?
-youtube.com##ytd-banner-promo-renderer,ytd-promoted-sparkles-web-renderer,ytd-statement-banner-renderer
-youtube.com##yt-mealbar-promo-renderer,ytm-feed-nudge-renderer,ytd-merch-shelf-renderer,ad-slot-renderer
-youtube.com##ytd-ad-slot-renderer
+youtube.com##ytd-banner-promo-renderer,ytd-promoted-sparkles-web-renderer,ytd-statement-banner-renderer,ytd-rich-section-renderer
+youtube.com##yt-mealbar-promo-renderer,ytm-feed-nudge-renderer,ytd-merch-shelf-renderer,ad-slot-renderer,ytd-ad-slot-renderer
+youtube.com##ytd-rich-item-renderer:has(ytd-ad-slot-renderer)
 !! AcFun
 ||aixifan.com/instant/
 ||acfun.cn/kos/*/widget/banner/
@@ -167,13 +182,14 @@ acfun.cn###pagelet_banner,.normal-ad,.banana-ad,#pagelet_rightrecommend,#pagelet
 ||bilibili.com/x/activity/subject/
 ||bilibili.com/x/web-show/res/locs?
 ||bilibili.com/x/click-interface/click/
+||bilibili.com/xlive/web-room/*/giftPanel/
 ||hdslb.com/bfs/static/jinkela/long/images/desktop-download-tip.
 ||hdslb.com/bfs/seed/jinkela/short/mini-login-v2/miniLogin.umd.min.js
-bilibili.com##div.search-panel>div.trending,.ad-report,#slide_ad,.adblock-tips,div.reply-notice,bili-comments-notice
+bilibili.com##div.search-panel>div.trending,.ad-report,#slide_ad,.adblock-tips,div.reply-notice,bili-comments-notice,div.rec-list>div.video-page-game-card-small
 bilibili.com##div.feed-card:has([class$="-ad"]),div.feed-card:has(svg.vui_icon)
 bilibili.com##div.bili-video-card:has([class$="-ad"]),div.bili-video-card:has(svg.vui_icon)
 bilibili.com##div.video-list>div[class]:has([class$="-ad"])
-bilibili.com##div.bpx-player-toast-wrap,div.desktop-download-tip,div.login-tip,div.video-page-special-card-small,.adcard
+bilibili.com##div.bpx-player-toast-wrap,div.desktop-download-tip,div.login-tip,div.video-page-special-card-small,.adcard,div.floor-single-card,#gift-control-vm
 !! 优酷
 ||alicdn.com/alilog/
 ||alicdn.com/fsp/tracker-
@@ -193,11 +209,14 @@ youku.com##.ad-wrap
 ||qq.com/speed
 ||qq.com/collect
 ||qq.com/vcms/ad/
+*/adts.tc.qq.com/
 ||qq.com/lib/midcache/aegis/
 ||gtimg.cn/tvideo/js/new_ping_
+||qq.com/rpc/trpc.vip_ad_promotion.
 ||qq.com/trpc.videosearch.hot_rank.
 ||gtimg.cn/z/static/aegis/aegis.min.js?
 ||qq.com/trpc.universal_backend_service.hot_word_info.
+v.qq.com##div[dt-params*="&ad_"],.game-switch-ad
 !! 爱奇艺
 ||iqiyi.com/dsp_track
 ||iqiyi.com^*/recoms?
@@ -308,6 +327,9 @@ cnfol.com##.rightAd
 !! 和讯网
 ||hexun.com/pc/ad/
 ||hexun.com/pc/modules/hexunhm.js
+!! 财联社
+cls.cn##.telegraph-list:has(.telegraph-vip-box)
+cls.cn##.vip-telegraph-article-popup-box
 !! 同花顺
 ||thsi.cn/*/cmsad/
 10jqka.com.cn##[ad-fid]
@@ -315,9 +337,18 @@ cnfol.com##.rightAd
 ||xueqiu.com/account/bind/show.json?
 ||xueqiu.com/analysis/private_sphere/show.json?
 xueqiu.com##.private__domain__association__ad
+!! 韭研公社
+||jiuyangongshe.com/img/img_banner_
+jiuyangongshe.com##.product-banner
 !! 理想论坛
 ||55188.com/data/attachment/portal/
 55188.com##.couplet,#adlist
+!! 金十数据
+||img.jin10.com/misc/
+||jin10.com/new/img/tradinghero_
+||cdn-files.jin10.com/hero_weibo/
+||jin10.com/new/img/hot-filter-tips.
+jin10.com##.top-ad,div.tradinghero
 ! 论坛社区
 !! 远景论坛
 ||pcbeta.com/data/attachment/forum/
@@ -340,7 +371,10 @@ ithome.com###tt
 !! 智能电视网
 ||dangbei.net/jing/
 ||dangbei.net/z/img/a-yejiao.gif
-znds.com##.a_pb,.a_czt
+||dangbei.net/data/znds/bbstop.gif
+||data.znds.com/attachment/forum/202
+||zndsssp.dangbei.net/2024/faxianai.gif
+znds.com##.a_pb,.a_czt,div#diy_vk_top_bbs_1,div#diy_vk_top_bbs_2
 !! 豆瓣
 movie.douban.com##+js(m3u-prune, /^\/video\/adjump/, /^https:\/\/s\d*\.bfengbf\.com.+?\.m3u8$/)
 ! 游戏
@@ -358,12 +392,12 @@ movie.douban.com##+js(m3u-prune, /^\/video\/adjump/, /^https:\/\/s\d*\.bfengbf\.
 ddys.fun##div.t-img-box
 ddys.pro##.cfa_popup,div.entry>div[id],main.site-main>div[id]
 !! 修罗影视
-||xlys01.com/zzzzz
+||xlys.*/zzzzz
 ||nbpicture.xyz/usr/uploads/202*/ky/
-xlys01.com###ad-index,#ad-float,.artplayer-plugin-ads,div.row-cards>div.col-12
-xlys01.com##+js(nano-stb)
-xlys01.com##+js(set-cookie, read, 1)
-xlys01.com##+js(set-cookie, closeAd, 1)
+xlys.*###ad-index,#ad-float,.artplayer-plugin-ads,div.row-cards>div.col-12,a[href="/aiad"]
+xlys.*##+js(nano-stb)
+xlys.*##+js(set-cookie, read, 1)
+xlys.*##+js(set-cookie, closeAd, 1)
 !! 麻花影视
 ||mahua128.com/ad/
 mahua128.com##div.tips.close-box
@@ -428,13 +462,14 @@ apkmirror.com##.ezo_ad,#bottom-slider
 /img/bd.js
 ||woozooo.com/img/m1093.js
 !! 123云盘
-||123pan.com/b/api/transfer/metrics/
-||123pan.com/manager/share_background/
-/img/web_banner_
-/share-static/dist/static/banner_
-/share-static/dist/login_img_bg_
-/share-static/dist/static/image_file_svip.
-/share-static/dist/static/bg_svip_block_ads.
+||123*.com/img/web_banner_
+||123*.com/static-by-custom/pc/
+||123*.com/b/api/transfer/metrics/
+||123*.com/manager/share_background/
+||123*.com/share-static/dist/static/banner_
+||123*.com/share-static/dist/login_img_bg_
+||123*.com/share-static/dist/static/image_file_svip.
+||123*.com/share-static/dist/static/bg_svip_block_ads.
 123pan.com##div.banner-container-pc
 !! Uploadrar
 uploadrar.com,rahim-soft.com##a.btn-lg
@@ -442,6 +477,17 @@ uploadrar.com,rahim-soft.com##a.btn-lg
 ||assets-7pb.pages.dev/images/dgpromo.
 !! Rapidgator
 ||rapidgator.net/images/pics/*_782x90_
+! 其他
+!! PornHub
+||phncdn.com/www-static/js/htmlPauseRoll/
+||phncdn.com/www-static/js/promo-banner.js?
+pornhub.com##ins.adsbytrafficjunky,.adLinks,li.relatedTjIntVideoPcSt,div.video-wrapper>div.hd.clear.original
+!! 肉视频
+||ra*.xyz^
+||rou.video/js/ga.js
+||rou.video/js/yd.js
+||rou.video/js/exo.js
+rou.video##div[class^="col-span-2"]
 ! 骚扰
 ! Cookie提示
 uploadrar.com,up-4ever.net##div#gdpr-cookie-notice
