@@ -10,6 +10,7 @@ no-large-media: behind-the-scene false
 * nex.163.com * block
 * eclick.360doc.com * block
 * recommend.360doc.com * block
+* adx.36kr.com * block
 * fc.3dmgame.com * block
 * 51.la * block
 * fans.91selfie.com * block
@@ -36,6 +37,7 @@ no-large-media: behind-the-scene false
 * wkctj.baidu.com * block
 * mountain.zhidao.baidu.com * block
 * river.zhidao.baidu.com * block
+* bakstotre.com * noop
 * apps.bdimg.com * noop
 * fex.bdstatic.com * block
 * zz.bdstatic.com * block
@@ -54,6 +56,7 @@ no-large-media: behind-the-scene false
 * analytics.cnblogs.com * block
 * alog.cnfol.com * block
 * cnzz.com * block
+* csp.withgoogle.com * block
 * doubleclick.ctfile.com * block
 * mydisplay.ctfile.com * block
 * g1.dfcfw.com * block
@@ -82,6 +85,7 @@ no-large-media: behind-the-scene false
 * www.gstatic.cn * noop
 * www.gstatic.com * noop
 * pgdt.gtimg.cn * block
+* captcha.gtimg.com * noop
 * enennsa.gushiwen.cn * block
 * hcaptcha.com * noop
 * apm.hexin.cn * block
@@ -126,6 +130,7 @@ no-large-media: behind-the-scene false
 * pemsrv.com * block
 * log.qvb.qcloud.com * block
 * beacon.qq.com * block
+* captcha.qq.com * noop
 * beacon.cdn.qq.com * block
 * gdt.qq.com * block
 * l.qq.com * block
@@ -169,6 +174,7 @@ no-large-media: behind-the-scene false
 * xtgreat.com * block
 * tracking.xueqiu.com * block
 * mc.yandex.ru * block
+* yhdmjx.com * noop
 * yinghuazy.xyz * noop
 * ymmiyun.com * block
 * ad.youku.com * block
@@ -191,6 +197,7 @@ no-large-media: behind-the-scene false
 163.com 127.net * noop
 36kr.com 36krcdn.com * noop
 52pojie.cn gstatic.cn * noop
+91porny.com jsdelivr.net * noop
 acfun.cn aixifan.com * noop
 acfun.cn yximgs.com * noop
 appinn.net appinn.com * noop
@@ -207,8 +214,12 @@ behind-the-scene * inline-script noop
 bilibili.com hdslb.com * noop
 cctv.com cctvpic.com * noop
 cctv.com cntv.cn * noop
+ctbpsp.com alicdn.com * noop
+ctbpsp.com cebpubservice.com * noop
+ddyingshi.cc shankubf.com * noop
 eastmoney.com dfcfw.com * noop
 eastmoney.com dftzj.com * noop
+facebook.com fbcdn.net * noop
 flyme.com flyme.cn * noop
 flyme.com meizu.com * noop
 github.com githubassets.com * noop
@@ -231,10 +242,11 @@ live.com * 3p-script noop
 mgtv.com hitv.com * noop
 mi.com mi-img.com * noop
 mi.com xiaomi.com * noop
+missav.video thisav.me * noop
 muchong.com xmcimg.com * noop
-netfly.fun bytedance.com * noop
-netfly.fun onlymu.sbs * noop
 news.cn xinhuanet.com * noop
+nnyy.in pstatp.com * noop
+olevod.com olelive.com * noop
 openai.com * 3p-frame noop
 openai.com * 3p-script noop
 qq.com gtimg.cn * noop
@@ -247,13 +259,12 @@ sina.com.cn sina.cn * noop
 sina.com.cn sinaimg.cn * noop
 sina.com.cn sinajs.cn * noop
 sina.com.cn weibo.com * noop
-smartfeecalculator.com devfiles.pages.dev * noop
-smartfeecalculator.com devuploads.com * noop
 sogou.com sogoucdn.com * noop
 sohu.com 56.com * noop
 sohu.com itc.cn * noop
 sohu.com cdn.sohucs.com * noop
 taobao.com alicdn.com * noop
+taobao.com aliyuncs.com * noop
 taobao.com tmall.com * noop
 tmall.com taobao.com * noop
 wallstcn.com cninfo.com.cn * noop
@@ -264,7 +275,9 @@ xiaomi.cn miui.com * noop
 xiaomi.com mi-img.com * noop
 xinhuanet.com news.cn * noop
 xueqiu.com imedao.com * noop
-yjys05.com pddpic.com * noop
+xvideos.com xvideos-cdn.com * noop
+yahoo.com yimg.com * noop
+yinfans.me playwoool.com * noop
 youku.com alicdn.com * noop
 youku.com ykimg.com * noop
 zhaopin.com zhaopin.cn * noop

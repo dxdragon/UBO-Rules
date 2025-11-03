@@ -1,17 +1,23 @@
 ! 临时
-||gdtv.cn/api/innerAd/
 ||meituan.net/csc/
 ||meituan.net/video/
+||gdtv.cn/api/innerAd/
 ||nunu90.cc/js/alll.js
-||rsc.cdn77.org/*.mp4
+||rsc.cdn77.org^*.mp4|
+||avtb.live/api/v1/lines
+||avtb.live/api/v1/notice
+||91porna.com/static/web/css/lib/xgplayer-advertise.
+||vthumb.killcovid2021.com/thumb/*.mp4|
 ||kakaocdn.net/thumb/P*/?fname=
 ||52ybcj.com/wp-content/uploads/*/HK-PC.
 ||51cto.com/blog/activity/bride/DetailsBride.
+btsearch.love##.chakra-card
 dmmiku.*##+js(acs, navigator.platform)
 ! 通用
 /gg_
 /ads_
 /ads/*
+/cps/*
 /js/ad_
 */ad.js
 */ads.js
@@ -19,6 +25,7 @@ dmmiku.*##+js(acs, navigator.platform)
 /adpic/*
 /ad-img/*
 /pagead/*
+/advert/*
 /adsense/*
 /js/ads.js
 /ad-right/*
@@ -29,7 +36,6 @@ dmmiku.*##+js(acs, navigator.platform)
 /templates/defboot/js/*
 /data/attachment/common/cf/*
 ##ins.adsbygoogle,#sitefocus
-##+js(nowebrtc)
 ! 广告联盟
 !! Google
 ||google.com/log?
@@ -41,7 +47,6 @@ bing.com##li.b_algo:has(.sb_adTA_title_link_cn)
 ||msn.cn/*/libs_ad-service_
 msn.cn##[id^="mrr-topad-id-"],display-ads,[data-ad-index],above-river-block
 !! 百度
-||baidu.com/ztbox?
 ||baidu.com/sugrec?
 ||baidu.com^*.gif?$ping
 ||bdstatic.com/*/hotsearch-
@@ -81,11 +86,9 @@ baike.baidu.com##div#J-union-wrapper
 !! 百度贴吧
 ||bdstatic.com/tb/cms/PC*0x
 ||bdstatic.com^*/tam-ogel/
-||bcebos.com/passApi/js/login
 ||tieba-ares.cdn.bcebos.com/mis/
 tieba.baidu.com##.l_banner
 !! 百度网盘
-||bcebos.com/union/
 ||baidu.com/buy/ad/
 ||baidu.com^*/pcs/adx?
 ||bdstatic.com^*/init-bg_
@@ -103,7 +106,6 @@ baidu.com##.bd-aside-ad
 ||baidu.com/haokan/ui-web/op/banner?
 ||bcebos.com/nv*/static/ecom/js/als/
 ||baidu.com/haokan/ui-web/search/hotwords?
-||passport.baidu.com/passApi/js/uni_wrapper.js?
 ||bdstatic.com/_next/static/media/close-game-icon.
 haokan.baidu.com##ul[class]>:not(li[vid]),div.lianmeng-pause,div#passport-login-pop,div.pop-mask,div[class^="pageBase_h5-game-float"],a.suitableaging,[class^="invoke-app-"],.page-bottom-hotsearch
 haokan.baidu.com##div[class^="videoList_videolist-item"]:has(div[class*="-aditem"])
@@ -136,7 +138,7 @@ ifeng.com##[class^="index_space"],[class^="index_serviceAd_"],[class^="index_har
 ||images.sohu.com/bill/
 ||itc.cn/msfe-pch-prod/*/assets/images/jubao
 sohu.com##div[id^="sideAd"],div[id^="columnAd"],li.textAd,div.god_header,[data-spm^="ad-"]
-sohu.com##div#allseeList>div[id],div.news-wrapper>div[id],div.text-ad-container
+sohu.com##div#allseeList>div[id],div.news-wrapper>div[id],div.text-ad-container,div#articleAllsee,div#groomRead
 !! 腾讯网
 ||ssp.qq.com/ad|
 ||mp.weixin.qq.com/mp/*report?
@@ -144,6 +146,16 @@ sohu.com##div#allseeList>div[id],div.news-wrapper>div[id],div.text-ad-container
 ||mp.weixin.qq.com/mp/getappmsgad?
 ||qq.com/gw/pc_search/hotWord
 qq.com##.ad-item,.normal_ad-item,#topAd,#bottomAd,.comment_ad-item
+qq.com##+js(set-local-storage-item, refer_tips_never_show, true)
+!! 新华网
+*/ADMark/
+*/adcreatives/
+||news.cn/js/xadndelayed.js
+||news.cn/*/scripts/ad_mobile.js
+||xinhuanet.com/js/xadndelayed.js
+!! Yahoo
+||yahoo.com/smartbanner/
+yahoo.com##.stream-taboola-ad,div[id^="sda-"]
 ! 在线视频
 !! YouTube
 ||youtube.com/sw.js
@@ -181,15 +193,23 @@ acfun.cn###pagelet_banner,.normal-ad,.banana-ad,#pagelet_rightrecommend,#pagelet
 ||hdslb.com/bfs/sycp/creative_img/
 ||bilibili.com/x/activity/subject/
 ||bilibili.com/x/web-show/res/locs?
+||hdslb.com/bfs/seed/jinkela/kv-sdk/
 ||bilibili.com/x/click-interface/click/
 ||bilibili.com/xlive/web-room/*/giftPanel/
+||hdslb.com/bfs/static/jinkela/long/fixed_ad/
+||hdslb.com/bfs/seed/jinkela/short/reporter-pb/
+||hdslb.com/bfs/seed/jinkela/short/b-mirror/biliMirror.
 ||hdslb.com/bfs/static/jinkela/long/images/desktop-download-tip.
 ||hdslb.com/bfs/seed/jinkela/short/mini-login-v2/miniLogin.umd.min.js
 bilibili.com##div.search-panel>div.trending,.ad-report,#slide_ad,.adblock-tips,div.reply-notice,bili-comments-notice,div.rec-list>div.video-page-game-card-small
 bilibili.com##div.feed-card:has([class$="-ad"]),div.feed-card:has(svg.vui_icon)
+bilibili.com##div.bili-feed-card:has([class$="-ad"]),div.bili-feed-card:has(svg.vui_icon)
 bilibili.com##div.bili-video-card:has([class$="-ad"]),div.bili-video-card:has(svg.vui_icon)
 bilibili.com##div.video-list>div[class]:has([class$="-ad"])
+bilibili.com##a[data-type="goods"],div.video-list-item:has([class*="-ad-creative"])
 bilibili.com##div.bpx-player-toast-wrap,div.desktop-download-tip,div.login-tip,div.video-page-special-card-small,.adcard,div.floor-single-card,#gift-control-vm
+bilibili.com##div.feed-card:has(div.bili-video-card__mask span:has-text(广告))
+bilibili.com##div.vui_carousel__slide:has(img.icon)
 !! 优酷
 ||alicdn.com/alilog/
 ||alicdn.com/fsp/tracker-
@@ -218,7 +238,6 @@ youku.com##.ad-wrap
 ||qq.com/trpc.universal_backend_service.hot_word_info.
 v.qq.com##div[dt-params*="&ad_"],.game-switch-ad
 !! 爱奇艺
-||iqiyi.com/dsp_track
 ||iqiyi.com^*/recoms?
 ||iqiyi.com^*/ad/mixer?
 ||iqiyi.com^*/play/tips?
@@ -228,6 +247,7 @@ v.qq.com##div[dt-params*="&ad_"],.game-switch-ad
 ||iqiyi.com^*/indexAd*?ids=
 ||t7z.cupid.iqiyi.com/mixer?
 ||t7z.cupid.iqiyi.com/track2?
+||71edge.com/videos/other/
 ||iqiyi.com/service-worker.js
 ||video.iqiyi.com/ws$websocket
 ||iqiyi.com^*?if=hotQueryNew&
@@ -315,11 +335,16 @@ book118.com##div.webpreview-recommend
 ||dfcfw.com/websitepoptg/
 ||eastmoney.com/emwappopads/
 ||eastmoney.com/usercollect/
+||eastmoney.com/js/rightAd.js?
+||dfcfw.com/libs/js/counter.js
 ||eastmoney.com/CommonRecommend.
+||dfcfw.com/js/news/fundfloatmedia_
+||eastmoney.com/a/js/fundnewsfloat.js?
 ||eastmoney.com/web/prd/jump_tracker.js
 ||dftzj.com/pr*/prod/personalrecommend
 ||eastmoney.com/newstatic/images/chartgg.
-eastmoney.com##.adBigBanner,.advert,.news_ad_link
+||emres.dfcfw.com/common/emshare/js/share.js
+eastmoney.com##.adBigBanner,.advert,.news_ad_link,div.F_hotFund,a[href^="https://acttg."]
 !! 中金在线
 ||cnfol.com/tui/gainTheAd.js
 ||cnfol.com/f=ua/js/AdSystem/
@@ -328,8 +353,12 @@ cnfol.com##.rightAd
 ||hexun.com/pc/ad/
 ||hexun.com/pc/modules/hexunhm.js
 !! 财联社
+||cls.cn/www/*/image/app-banner.
+||img.cls.cn/images/20250605/Brl7ILoAUj.jpg
+||img.cls.cn/images/20250605/r3Zy9a5z7R.jpg
+||img.cls.cn/images/20250605/F5610EV6QK.png
 cls.cn##.telegraph-list:has(.telegraph-vip-box)
-cls.cn##.vip-telegraph-article-popup-box
+cls.cn##.vip-telegraph-article-popup-box,div.top-activity,.ad-box
 !! 同花顺
 ||thsi.cn/*/cmsad/
 10jqka.com.cn##[ad-fid]
@@ -349,6 +378,8 @@ jiuyangongshe.com##.product-banner
 ||cdn-files.jin10.com/hero_weibo/
 ||jin10.com/new/img/hot-filter-tips.
 jin10.com##.top-ad,div.tradinghero
+!! 南方财富
+||southmoney.com/fed/images/wsouthmoney/cylgg
 ! 论坛社区
 !! 远景论坛
 ||pcbeta.com/data/attachment/forum/
@@ -362,6 +393,7 @@ cnblogs.com##div#cnblogs_c1
 ||kafan.cn/plugin/dsu_amupper/images/
 !! 恩山无线
 ||right.com.cn/logo/ggtf.gif
+||right.com.cn/forum/data/attachment/common/template/boardimg_
 right.com.cn##.a_t,#sitefocus
 !! IT之家
 ||ithome.com/adtemplate/
@@ -370,11 +402,12 @@ right.com.cn##.a_t,#sitefocus
 ithome.com###tt
 !! 智能电视网
 ||dangbei.net/jing/
-||dangbei.net/z/img/a-yejiao.gif
-||dangbei.net/data/znds/bbstop.gif
-||data.znds.com/attachment/forum/202
-||zndsssp.dangbei.net/2024/faxianai.gif
+||dangbei.net^*.gif
+||znds.com/api/down/get_app.php?*=yingyongtuijian
 znds.com##.a_pb,.a_czt,div#diy_vk_top_bbs_1,div#diy_vk_top_bbs_2
+!! 无忧论坛
+||wuyou.net/0000/dg.
+wuyou.net##.a_pt
 !! 豆瓣
 movie.douban.com##+js(m3u-prune, /^\/video\/adjump/, /^https:\/\/s\d*\.bfengbf\.com.+?\.m3u8$/)
 ! 游戏
@@ -384,6 +417,10 @@ movie.douban.com##+js(m3u-prune, /^\/video\/adjump/, /^https:\/\/s\d*\.bfengbf\.
 !! 游民星空
 ||gamersky.com/common/tg/
 ! 影视
+!! 欧乐影院
+||olelive.com/uploads/file/
+||olelive.com/*/pub/index/search/hot/keywords?
+olevod.com##.pc-ads
 !! 低端影视
 ||ddys.fun/static/images/
 ||ddys.pro/vjs-plugins/videojs.das.min.js
@@ -394,17 +431,17 @@ ddys.pro##.cfa_popup,div.entry>div[id],main.site-main>div[id]
 !! 修罗影视
 ||xlys.*/zzzzz
 ||nbpicture.xyz/usr/uploads/202*/ky/
-xlys.*###ad-index,#ad-float,.artplayer-plugin-ads,div.row-cards>div.col-12,a[href="/aiad"]
-xlys.*##+js(nano-stb)
-xlys.*##+js(set-cookie, read, 1)
-xlys.*##+js(set-cookie, closeAd, 1)
+xl01.*###ad-index,#ad-float,.artplayer-plugin-ads,div.row-cards>div.col-12,a[href="/aiad"]
+xl01.*##+js(nano-stb)
+xl01.*##+js(set-cookie, read, 1)
+xl01.*##+js(set-cookie, closeAd, 1)
 !! 麻花影视
 ||mahua128.com/ad/
 mahua128.com##div.tips.close-box
 !! 新樱花动漫
 xyhdm.cc###ad_close
 !! 美剧天堂
-||meijutt.tw/js/pcjs/
+*/js/pcjs/all
 !! 美剧行星
 ||nfyingshi.com/wp-content/uploads/*-2048x304.
 !! 电影天堂
@@ -414,8 +451,8 @@ xyhdm.cc###ad_close
 ||dytt89.com/js/content_bottom.js
 !! Vidhub
 ||euqq.cn/yxtg/
-||vidhub.tv/mxstatic/image/aabbc/
-||vidhub1.cc/mxstatic/image/aabbc/
+||vidhub*/mxstatic/image/aabbc/
+||vidhub*/mxstatic/image/aabbc/
 !! 奈飞中文网
 |https://ad.
 ||netfly.fun/static/js/tttt.js?
@@ -423,13 +460,15 @@ netfly.fun##.tips-box
 netfly.fun##+js(set-cookie, showBtn, true)
 !! 美剧天堂
 ||meijutt.net/js/pcjs/all
+!! LIBVIO
+||moji.com/thd_file/
+||libvio.cc/statics/js/pop.js
 !! 去LZ.YZ视频广告
 ##+js(m3u-prune, /.{35}$/, /^https:\/\/(v\.cdnlz\d*|svip\.high\d*-playback|v3\.yzzy\d*-play\.com)/)
 ! 下载
 !! 423Down
 423down.com##div.entry p[style],div.entry~p[style],div.entry>p[align] span[style]
-423down.com##ul>li a:has-text(产品推广):upward(li)
-423down.com##ul>li a>span:has-text(置顶):upward(li)
+423down.com##ul>li span>a:has-text(423Down):upward(li)
 !423down.com##div.entry p:first-child,li.item>div[style]
 !! 小众软件
 appinn.com##section.featured-section
@@ -462,17 +501,16 @@ apkmirror.com##.ezo_ad,#bottom-slider
 /img/bd.js
 ||woozooo.com/img/m1093.js
 !! 123云盘
-||123*.com/img/web_banner_
-||123*.com/static-by-custom/pc/
-||123*.com/b/api/transfer/metrics/
-||123*.com/manager/share_background/
-||123*.com/share-static/dist/static/banner_
-||123*.com/share-static/dist/login_img_bg_
-||123*.com/share-static/dist/static/image_file_svip.
-||123*.com/share-static/dist/static/bg_svip_block_ads.
-123pan.com##div.banner-container-pc
-!! Uploadrar
-uploadrar.com,rahim-soft.com##a.btn-lg
+||123pan.com^*/metrics/
+||123pan.com^*/banner_
+||123pan.com^*/login_img_bg_
+||123pan.com^*/image_file_svip.
+||123pan.com^*/bg_svip_block_ads.
+||123pan.com/*/customizedModals/
+||123pan.com/img/web_banner_
+||123pan.com/static-by-custom/pc/
+||123pan.com/manager/share_background/
+123pan.com##div.banner-container-pc,div.slick-slider
 !! DropGalaxy
 ||assets-7pb.pages.dev/images/dgpromo.
 !! Rapidgator
@@ -481,7 +519,7 @@ uploadrar.com,rahim-soft.com##a.btn-lg
 !! PornHub
 ||phncdn.com/www-static/js/htmlPauseRoll/
 ||phncdn.com/www-static/js/promo-banner.js?
-pornhub.com##ins.adsbytrafficjunky,.adLinks,li.relatedTjIntVideoPcSt,div.video-wrapper>div.hd.clear.original
+pornhub.com##ins.adsbytrafficjunky,.adLinks,li.relatedTjIntVideoPcSt,div.video-wrapper>div.hd.clear.original,li.js_promoItem
 !! 肉视频
 ||ra*.xyz^
 ||rou.video/js/ga.js
