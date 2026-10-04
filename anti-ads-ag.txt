@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 自用去广告补充规则
-! Version: 20261002
+! Version: 20261004
 ! Expires: 1 day
 ! Update: https://gh-proxy.com/raw.githubusercontent.com/dxdragon/UBO-Rules/main/anti-ads-ag.txt
 ! Homepage: https://github.com/dxdragon/UBO-Rules/
@@ -514,21 +514,23 @@ nfyingshi.com##.biggaonggao,div.el-dialog__wrapper,div#minigonggaop
 ||esadj.com/vod_pc_static_ds91/js/dl/ds91.dl.
 ||esadj.com/vod_pc_static_ds91/js/alertDLPopup.
 ||esadj.com/vod_pc_static_ds91/frameworks/disable-devtool/
+duse1.com##.mobile-download-popup
 !! Nettv
 nettv.live###winpop,#ads,.gg-container-wrapper,.sponsor-list-s
 !! 视频广告
-nnyy.in#%#//scriptlet('m3u-prune', '/\/video\/adjump\//gm', '/https?:\/\/(?:[-\w]+\.)*fengbao\d*\.com\/.+?\.m3u8$/')
-lbjx9.com#%#//scriptlet('m3u-prune', '/(?:#EXT-X-DISCONTINUITY\n)?#EXT-X-KEY:METHOD=NONE[\s\S]+?(?=#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)/gm', '/https?:\/\/.+?\.m3u8$/')
-155jx.com#%#//scriptlet('m3u-prune', '/(?:#EXT-X-DISCONTINUITY\n)?#EXT-X-KEY:METHOD=NONE[\s\S]+?(#EXT-X-DISCONTINUITY(\n#EXT-X-KEY:METHOD=NONE)?|(?=#EXT-X-ENDLIST))/gm', '/https?:\/\/.+?\.m3u8$/')
+*#%#//scriptlet('trusted-replace-xhr-response', '/(#EXT-X-DISCONTINUITY\n)(?:#EXTINF:[\d\.]+,\n[^\n]*\/video\/adjump\/[^\n]*\n)+\1/', '', '.m3u8')
+*~155jx.com#%#//scriptlet('trusted-replace-xhr-response', '/(?:#EXT-X-DISCONTINUITY\n)?#EXT-X-KEY:METHOD=NONE[\s\S]+?(?=#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)/g', '', '.m3u8')
+155jx.com#%#//scriptlet('trusted-replace-xhr-response', '/(?:#EXT-X-DISCONTINUITY\n)?#EXT-X-KEY:METHOD=NONE[\s\S]+?(#EXT-X-DISCONTINUITY(\n#EXT-X-KEY:METHOD=NONE)?|(?=#EXT-X-ENDLIST))/g', '', '.m3u8')
+*#%#//scriptlet('trusted-replace-xhr-response', '/(#EXT-X-DISCONTINUITY\n)(?:#EXTINF:[\d\.]+,\n[^\n]+\n){1,4}(?=\1|#EXT-X-ENDLIST)/g', '', '/https?:\/\/(?:[-\w]+\.)*ffzy-plays\.com\/.+\.m3u8/')
 
 ! 下载
 !! 423Down
 423down.com##div.entry p[style],div.entry~p[style],div.entry>p[align] span[style]
-423down.com##ul>li span>a:contains(423Down):upward(li)
 423down.com##ins.qb-adsbyqubian,ul.quick-menu li[id]
+423down.com#?#ul.excerpt > li:has(.cat a:contains(423Down)):remove()
+423down.com#?#li.item:has(.item-title .sticky-post:contains(置顶)):remove()
 !! 小众软件
 appinn.com##section.featured-section
-appinn.com##section#latest-posts>div.latestPost a[href]:contains(FD):upward(div.latestPost)
 !! 4分贝
 ||4fb.cn/b/bshareC2.js
 ||4fb.cn/skin/2017new/js/BD.js
